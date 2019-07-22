@@ -1,6 +1,6 @@
 export class AuthenticationController {
 
-  constructor($log, $location, authenticationService) {
+  constructor($log, $location, toastr, authenticationService) {
     'ngInject';
 
     this.email = '';
@@ -8,8 +8,15 @@ export class AuthenticationController {
     this.$log = $log;
     this.authenticationService = authenticationService;
     this.$location = $location;
+    this.toastr = toastr;
 
   }
+
+
+  showToastr(message) {
+    this.toastr.info(message);
+  }
+
 
   register() {
     this.authenticationService.register(this.email, this.password)
@@ -18,6 +25,7 @@ export class AuthenticationController {
         this.$location.path('/dashboard');
       })
       .catch((error) => {
+        this.showToastr('registration failed! Please try another email address!');
         this.$log.error('Registration failed\n' + angular.toJson(error.data, true));
       });
   }
@@ -29,6 +37,7 @@ export class AuthenticationController {
         this.$location.path('/dashboard');
       })
       .catch( (error) => {
+        this.showToastr("Incorrect credentials!");
         this.$log.error('Login failed\n' + angular.toJson((error.data, true)));
       });
   }
