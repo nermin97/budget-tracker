@@ -8,7 +8,8 @@
     "@auth0/angular-jwt": "^3.0.0"
   },
   "scripts": {
-    "test": "gulp test"
+    "test": "gulp test",
+    "start": "gulp serve"
   },
   "devDependencies": {
     "estraverse": "~4.1.0",
@@ -58,6 +59,6 @@
     "uglify-save-license": "~0.4.1"
   },
   "engines": {
-    "node": ">=0.10.0"
+    "node": "11.14.0"
   }
 }
