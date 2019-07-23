@@ -3,8 +3,8 @@ export class AuthenticationService {
     'ngInject';
 
     this.$http = $http;
-    this.apiRegister = 'http://localhost:8080/backend/api/auth/register/';
-    this.apiLogin = 'http://localhost:8080/backend/api/auth/login/';
+    this.apiRegister = 'https://backend-api-pragmatio.herokuapp.com/api/auth/register/';
+    this.apiLogin = 'https://backend-api-pragmatio.herokuapp.com/api/auth/login/';
   }
 
   register(emailInput, passwordInput) {

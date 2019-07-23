@@ -4,7 +4,7 @@ export class IncomeService {
 
     this.token = 'token';
     this.$http = $http;
-    this.apiIncomes = 'http://localhost:8080/backend/api/me/income/';
+    this.apiIncomes = 'https://backend-api-pragmatio.herokuapp.com/api/me/income/';
   }
 
   getIncomes() {

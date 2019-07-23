@@ -3,9 +3,9 @@ export class ExpenseService {
     'ngInject';
 
     this.token = 'token';
-    this.forNote = '/note/'
+    this.forNote = '/note/';
     this.$http = $http;
-    this.apiExpenses = 'http://localhost:8080/backend/api/me/expense/';
+    this.apiExpenses = 'https://backend-api-pragmatio.herokuapp.com/api/me/expense/';
   }
 
   //expenses
