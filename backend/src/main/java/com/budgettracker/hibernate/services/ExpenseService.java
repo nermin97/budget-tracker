@@ -4,7 +4,6 @@ import com.budgettracker.hibernate.dao.ExpenseDao;
 import com.budgettracker.hibernate.dao.NoteDao;
 import com.budgettracker.hibernate.entity.Expense;
 import com.budgettracker.hibernate.entity.Note;
-import com.budgettracker.hibernate.entity.User;
 
 import java.util.List;
 
