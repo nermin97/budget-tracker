@@ -59,6 +59,7 @@
     "uglify-save-license": "~0.4.1"
   },
   "engines": {
-    "node": "10.0.0"
+    "node": "10.0.0",
+    "npm": "6.10.1"
   }
 }
