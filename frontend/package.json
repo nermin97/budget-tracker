@@ -9,7 +9,7 @@
   },
   "scripts": {
     "test": "gulp test",
-    "start": "gulp build serve:dist"
+    "start": "gulp serve:dist"
   },
   "devDependencies": {
     "estraverse": "~4.1.0",
